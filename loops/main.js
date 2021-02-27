@@ -38,10 +38,10 @@ function checkAnswer(){
     let answer = document.getElementById("answer").value;
     let answerContent = document.getElementById("answerContent");
     if(answer == 2){
-      answerContent.innerHTML = "<img src='images/fireworks.gif' width='200'/>";
+      answerContent.innerHTML = "<img src='images/right.png' width='200'/>";
       // answerContent.innerHTML = "right";
     } else {
-          answerContent.innerHTML = "<img src='images/wrong.gif' width='200'/>";
+          answerContent.innerHTML = "<img src='images/wrong.png' width='200'/>";
         // answerContent.innerHTML = "worng";
     }
   }
