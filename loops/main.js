@@ -49,8 +49,8 @@ function checkAnswer(){
   function printTimesTable(){
     let timesTable = document.getElementById("timesTable").value;
     let timesTableContent = document.getElementById("timesTableContent");
+    timesTableContent.innerHTML = "";
     for(let i = 1; i <= 10; i++){
-      // timesTableContent.innerHTML = `${timesTable} x ${i} = ${timesTable * i}`;
-      timesTableContent.innerHTML +=  i + " x " + timesTable + " = " + timesTable * i + "<br/>";
+      timesTableContent.innerHTML += `${timesTable} x ${i} = ${timesTable * i} <br/>`;
     }
   }
