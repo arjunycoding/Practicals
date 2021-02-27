@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+
+    <!-- Milligram CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
+    <!-- You should properly set the path from the main file. -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel='icon' href="infinity.png" type='image/x-icon'/>
+</head>
+
+<body>
+    <div class = "all">
+	<h2>Arjun's Project</h2>
+    Type In Your Favorite Color: 
+    <br/>
+    <br/>
+    <input type = "text" name = "color" id = "inputColor"/>&nbsp;&nbsp;&nbsp;&nbsp;
+    <button onclick = "addColorContent()">Submit</button>
+    <br/>
+    <br/>
+        <div id="ifLoopContent">This is your favorite color</div>
+    <br/>
+    <br/>
+        Type How many times you would like to print:
+        <input type = "number" name = "loopNumber" id = "loopNumber">&nbsp;&nbsp;&nbsp;&nbsp;
+        <br/>
+        <br/>
+        What text to diplay
+        <input type = "text" name = "loopText" id = "loopText">&nbsp;&nbsp;&nbsp;&nbsp;
+        <button onclick = "addNumberContent()">Submit</button>
+        <div id="forLoopContent"></div> 
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+
+        1 + 1 = <input type = "number" name = "answer " id = "answer"/>
+        <button onclick = "checkAnswer()">Submit</button>
+        <br/>
+        <br/>
+        <div id = "answerContent"></div>
+        <br/><br/>
+        What Times Table Would You Like? <input type = "number" name = "timesTable" id = "timesTable"/>
+        <button onclick = "printTimesTable()">Submit</button>
+        <br/>
+        <br/>
+        <div id="timesTableContent"></div>
+        <br/><br/>
+
+        <script src="main.js"></script>
+    </div>
+    <aside>
+    </aside>
+</body>
+</html>
