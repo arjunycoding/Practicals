@@ -12,7 +12,7 @@
 
     <!-- You should properly set the path from the main file. -->
     <link rel="stylesheet" href="style.css" />
-    <link rel='icon' href="infinity.png" type='image/x-icon'/>
+    <link rel='icon' href="images/infinity.png" type='image/x-icon'/>
 </head>
 
 <body>
@@ -44,6 +44,24 @@
         <br/>
         <div id = "answerContent"></div>
         <br/><br/>
+        <p>each question is worth one point</p>
+        <ol>
+          <li>1 + 1 = <input type = "number" name = "qOne " id = "qOne"/></li>
+          <li>2 + 1 = <input type = "number" name = "qTwo " id = "qTwo"/></li>
+          <li>3 + 1 = <input type = "number" name = "qThree " id = "qThree"/></li>
+          <li>4 + 1 = <input type = "number" name = "qFour " id = "qFour"/></li>
+          <li>5 + 1 = <input type = "number" name = "qFive " id = "qFive"/></li>
+          <li>6 + 1 = <input type = "number" name = "qSix " id = "qSix"/></li>
+          <li>7 + 1 = <input type = "number" name = "qSeven " id = "qSeven"/></li>
+          <li>8 + 1 = <input type = "number" name = "qEight " id = "qEight"/></li>
+          <li>9 + 1 = <input type = "number" name = "qNine " id = "qNine"/></li>
+          <li>10 + 1 = <input type = "number" name = "qTen " id = "qTen"/></li>
+        </ol>
+          <button onclick = "checkAnswers()">Check Answer</button>
+          <br/>
+          <br/>
+          <div id = "score"></div>
+          <br/><br/>
         What Times Table Would You Like? <input type = "number" name = "timesTable" id = "timesTable"/>
         <button onclick = "printTimesTable()">Submit</button>
         <br/>
@@ -51,6 +69,10 @@
         <div id="timesTableContent"></div>
         <br/><br/>
 
+        <h2>Want To Code Type It Here!</h1>
+            <textarea name = "code" id = "code"></textarea>
+            <button onclick = "runCode()">RUN</button>
+            <div id = "outputCode"></div>
         <script src="main.js"></script>
     </div>
     <aside>

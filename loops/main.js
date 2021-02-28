@@ -45,6 +45,60 @@ function checkAnswer(){
         // answerContent.innerHTML = "worng";
     }
   }
+
+  // Quiz 
+  function checkAnswers(){
+    // VARIABLES
+    var qOne = document.getElementById("qOne").value; 
+    var qTwo = document.getElementById("qTwo").value; 
+    var qThree = document.getElementById("qThree").value; 
+    var qFour = document.getElementById("qFour").value; 
+    var qFive = document.getElementById("qFive").value; 
+    var qSix = document.getElementById("qSix").value; 
+    var qSeven = document.getElementById("qSeven").value; 
+    var qEight = document.getElementById("qEight").value; 
+    var qNine = document.getElementById("qNine").value; 
+    var qTen = document.getElementById("qTen").value; 
+    var score = document.getElementById("score"); 
+    var endScore = 0;
+    
+    // IF LOOPS
+    if(qOne == 2){
+      endScore = (endScore + 1);
+    }
+    if(qTwo == 3){
+      endScore = (endScore + 1);
+    }
+    if(qThree == 4){
+      endScore = (endScore + 1);
+    }
+    if(qFour == 5){
+      endScore = (endScore + 1);
+    }
+    if(qFive == 6){
+      endScore = (endScore + 1);
+    }
+    if(qSix == 7){
+      endScore = (endScore + 1);
+    }
+    if(qSeven == 8){
+      endScore = (endScore + 1);
+    }
+    if(qEight == 9){
+      endScore = (endScore + 1);
+    }
+    if(qNine == 10){
+      endScore = (endScore + 1);
+    }
+    if(qTen == 11){
+      endScore = (endScore + 1);
+    }
+    score.innerHTML =  `${endScore} /10`;
+    if(score.innerHTML == "10 /10"){
+        score.innerHTML += "<br/> <br/><img src = '../images/fireworks.gif'/>";
+    }
+  }
+
   // for loop
   function printTimesTable(){
     let timesTable = document.getElementById("timesTable").value;
@@ -54,3 +108,12 @@ function checkAnswer(){
       timesTableContent.innerHTML += `${timesTable} x ${i} = ${timesTable * i} <br/>`;
     }
   }
+
+  //Code
+
+  function runCode(){
+    let code = document.getElementById("code").value;
+    let outputCode = document.getElementById("outputCode");
+    outputCode.innerHTML = code;
+  }
+
