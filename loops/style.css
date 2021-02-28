@@ -47,6 +47,5 @@ input{
   height: 200px;
   align-items:center;
   display:flex;
-  transition-property: background-color;
   transition-duration: 750ms;
 }
