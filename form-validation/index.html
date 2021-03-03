@@ -15,8 +15,37 @@
 </head>
 <body>
     <div class = "all">
-        <h1 class = "heading">FORM VALIDATION</h1>
+        <form action = "submit.html">
+            <h1 class = "heading">FORM VALIDATION</h1>
+            <p>What Vehiclas Do You Own</p>
+            <input type = "checkbox" id = "red" name = "red"/>Car<br/>
+            <input type = "checkbox" id = "red" name = "red"/>Bike<br/>
+            <input type = "checkbox" id = "red" name = "red"/>Boat
+            <br/><br/>
+
+            <select>
+                <option disabled selected>Please Select Your Gender</option>
+                <option value = "m">Male</option>
+                <option value = "f">Female</option>
+            </select>
+
+            <select multiple>
+                <option disabled selected>Which Countries Have You Visited</option>
+                <option value = "USA">USA</option>
+                <option value = "canada">Canada</option>
+                <option value = "newzealand">Newzealand</option>
+                <option value = "india">India</option>
+                <option value = "mexico">Mexico</option>
+                <option value = "england">England / United Kingdom</option>
+                <option value = "france">France</option>
+            </select>
+            Which Type Of Food Do You Like
+            <input type = "radio" name = "typeOfFood" id = "y"> Yes &nbsp;&nbsp;&nbsp;
+            <input type = "radio" name = "typeOfFood" id = "n"> No
+            <br/><br/>
+            <button>Submit</button>
+        </form>
     </div>
-    </div>
+    <script src = "main.js"></script>
 </body>
 </html>
