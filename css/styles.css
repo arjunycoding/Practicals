@@ -5,13 +5,13 @@ body {
 }
 
 button{
-  color:white;
-  background-color:tan;
-  border:none;
+  color:white !important;
+  background-color:tan !important;
+  border:none !important;
 }
 button:hover{
-  color:white;
-  background-color:peru;
+  color:white !important;
+  background-color:peru !important;
   border:none;
 }
 
