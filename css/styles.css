@@ -20,7 +20,7 @@ input:focus{
   box-shadow: 0 0 3px #1670BE;
 }
 input{
-  width:20px !important;
+  width:500px !important;
 }
 
 .all{
